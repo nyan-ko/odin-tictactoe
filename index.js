@@ -12,7 +12,13 @@ const Game = (function() {
             return winner;
         }
 
-        board[x][y] = type;
+        if (board[x][y] === '') {
+            board[x][y] = type;
+        }
+        else {
+            return "invalid";
+        }
+
         let won = _checkWin(x, y);
         if (won) {
             winner = type;
