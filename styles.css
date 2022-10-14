@@ -1,0 +1,13 @@
+
+.ttt {
+    width: 300px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border: 1px black solid;
+}
